@@ -14,12 +14,13 @@
   - [Step 4: Deploy and Register Your Agent](#step-4-deploy-and-register-your-agent)
 - [License](#license)
 
-[**Chaos Agents**](https://github.com/ChaosLabsInc/chaos-agents) is a middleware system between [**Chaos Risk Oracles**](https://edgebychaos.com/) and protocols consuming them, fully controlled by the protocol itself.
+[**Chaos Agents**](https://github.com/ChaosLabsInc/chaos-agents) is a middleware system between [**Chaos Risk Oracles**](https://oracles.chaoslabs.xyz/) and protocols consuming them, fully controlled by the protocol itself.
 Each protocol has multiple Agents, each addressing a different type of risk update.
 
 ## System Architecture
 
 <img src="./agent-diagram.svg" alt="diagram" width="100%" height="100%">
+<img src="./agent-diagram-aave.svg" alt="diagram" width="100%" height="100%">
 
 _Example of Agents configuration, in this case for the Aave protocol_
 
@@ -27,7 +28,7 @@ _Example of Agents configuration, in this case for the Aave protocol_
 
 See the [full documentation](https://github.com/ChaosLabsInc/chaos-agents) for the detailed description of the system components.
 
-**Agents Hub**: The Agents Hub serves as the controller for multiple agents; a single monolith smart contract per protocol that is fully controlled by the protocol itself. It encompasses all common logic, including querying from [Chaos Risk Oracles](https://edgebychaos.com/), access control checks, generic validation, circuit breakers management, and more.
+**Agents Hub**: The Agents Hub serves as the controller for multiple agents; a single monolith smart contract per protocol that is fully controlled by the protocol itself. It encompasses all common logic, including querying from [Chaos Risk Oracles](https://oracles.chaoslabs.xyz/), access control checks, generic validation, circuit breakers management, and more.
 
 _Protocols should deploy and configure their own Hub from the main [repository](https://github.com/ChaosLabsInc/chaos-agents), as this one is exclusively for development and configuration of individual agents._
 
