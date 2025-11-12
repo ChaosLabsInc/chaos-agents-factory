@@ -3,5 +3,5 @@
 	url = https://github.com/foundry-rs/forge-std
 [submodule "lib/chaos-agents"]
 	path = lib/chaos-agents
-	url = https://github.com/bgd-labs/chaos-agents
-  branch = chore/rename-agents
+	url = https://github.com/ChaosLabsInc/chaos-agents
+
