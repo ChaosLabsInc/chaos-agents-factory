@@ -4,4 +4,4 @@
 [submodule "lib/chaos-agents"]
 	path = lib/chaos-agents
 	url = https://github.com/ChaosLabsInc/chaos-agents
-  branch = chore/rename-agents
+
